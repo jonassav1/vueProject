@@ -1,0 +1,56 @@
+@import './base.css';
+@import 'tailwindcss';
+
+#app {
+  margin: 0 auto;
+  padding: 1rem;
+  margin-top: 2rem;
+  @apply bg-orange-50;
+}
+body {
+  font-family: sans-serif;
+  margin: 0;
+  @apply bg-orange-50;
+}
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+  }
+
+  #app {
+    width: 100%;
+    max-width: auto;
+    padding: 2rem;
+  }
+}
+.buttonForAdd {
+  @apply bg-orange-200 px-1 py-1 rounded-full   hover:bg-red-600 mx-1 transition;
+}
+.buttonForEdit {
+  @apply bg-yellow-200 px-1 py-1 rounded-full hover:bg-red-600 mx-1 transition;
+}
+.buttonForDelete {
+  @apply bg-red-200 px-4 py-2 rounded-full hover:bg-red-600 mx-1 transition;
+}
+.buttonForStop {
+  @apply bg-gray-200 px-4 py-2 rounded-full hover:bg-red-600 mx-1 transition;
+}
+input {
+  @apply border;
+}
