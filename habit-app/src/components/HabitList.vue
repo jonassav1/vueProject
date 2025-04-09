@@ -219,6 +219,7 @@ function stopHabit() {
 @media (max-width: 460px) {
   .habitItemStyle {
     grid-template-columns: repeat(2, 1fr);
+    justify-items: start;
   }
 }
 @media (max-width: 344px) {
